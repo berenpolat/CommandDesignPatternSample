@@ -1,0 +1,24 @@
+using Unity.VisualScripting;
+
+namespace DefaultNamespace
+{
+    public class Invoker
+    {
+        //Invoker: Create an Invoker class that holds a reference to the command object and can execute the command when requested.
+
+        public static Invoker Instance { get; set; } = new Invoker();
+
+        private Command command;
+
+
+        public void SetCommand(Command command)
+        {
+            this.command = command;
+        }
+
+        public void ExecuteCommand(Command command)
+        {
+            command.Execute();
+        }
+    }
+}
