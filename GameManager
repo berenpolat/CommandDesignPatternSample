@@ -1,0 +1,13 @@
+using UnityEngine;
+
+namespace DefaultNamespace
+{
+    public class GameManager: MonoBehaviour
+    {
+        private void Update()
+        {
+            Invoker.Instance.SetCommand(new CutCommand(new Editor()));
+            Invoker.Instance.ExecuteCommand(new CutCommand(new Editor()));
+        }
+    }
+}
