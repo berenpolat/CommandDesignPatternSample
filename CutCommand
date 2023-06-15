@@ -1,0 +1,20 @@
+
+namespace DefaultNamespace
+{
+    public class CutCommand : Command
+    {
+        private readonly Editor editor;
+
+
+        public CutCommand(Editor editor)
+        {
+            this.editor = editor;
+        }
+
+
+        public override void Execute()
+        {
+            editor.Cut();
+        }
+    }
+}
