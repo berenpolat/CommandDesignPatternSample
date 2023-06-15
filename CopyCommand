@@ -1,0 +1,20 @@
+
+namespace DefaultNamespace
+{
+    //Concrete Commands: Implement concrete command classes for each operation,
+    //such as CopyCommand, CutCommand, and PasteCommand, that inherit from the Command base class.
+    public class CopyCommand:Command
+    {
+        private readonly Editor editor;
+
+        public CopyCommand(Editor editor)
+        {
+            this.editor = editor;
+        }
+
+        public override void Execute()
+        {
+            editor.Copy();
+        }
+    }
+}
