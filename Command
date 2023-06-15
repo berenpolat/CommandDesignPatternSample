@@ -1,0 +1,8 @@
+
+public abstract class Command
+{
+    //Command: Define an interface or abstract class Command with an Execute() method.
+    public abstract void Execute();
+    
+  
+}
