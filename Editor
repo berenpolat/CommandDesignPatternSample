@@ -1,0 +1,20 @@
+using UnityEngine;
+
+namespace DefaultNamespace
+{
+    //Receiver: Create a Receiver class that represents the object performing the actual operations.
+    //In this case, it can be an Editor class.
+    public class Editor
+    {
+
+        public void Copy()
+        {
+            Debug.Log("Copying element");
+        }
+
+        public void Cut()
+        {
+            Debug.Log("Cutting element");
+        }
+    }
+}
